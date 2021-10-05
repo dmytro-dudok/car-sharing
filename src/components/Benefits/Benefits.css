@@ -1,0 +1,109 @@
+.benefits__inner {
+	padding: 100px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.benefits__title {
+	margin-bottom: 48px;
+}
+
+.benefits__list-box {
+	flex: 1 1 283px;
+}
+
+.benefits__list-item {
+	position: relative;
+	padding-right: 26px;
+	text-align: right;
+}
+
+.benefits__list-item::after {
+	content: url('../../images/list-dot.svg');
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+
+.benefits__list-item + .benefits__list-item {
+	margin-top: 27px;
+}
+
+.benefits__list-item:nth-child(2) {
+	margin-right: 47px;
+}
+
+.benefits__list-item:nth-child(3) {
+	margin-right: 99px;
+}
+
+.benefits__list-item:nth-child(4) {
+	margin-right: 145px;
+}
+
+.benefits__list-item:nth-child(5) {
+	margin-right: 99px;
+}
+
+.benefits__list-item:nth-child(6) {
+	margin-right: 47px;
+}
+
+.benefits__image {
+	flex: 2 1 600px;
+	padding-top: 50px;
+	align-self: center;
+}
+
+.benefits__content {
+	padding-top: 17px;
+	flex: 1 1 300px;
+	text-align: right;
+	align-self: center;
+}
+
+.benefits__text {
+	margin-bottom: 30px;
+}
+
+.benefits__btn {
+	padding: 6px 34px 6px 64px !important;
+	position: relative;
+}
+
+.benefits__btn::before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 34px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../../images/play.svg') no-repeat;
+}
+
+.benefits__btn:hover::before {
+	background: url('../../images/play-gold.svg') no-repeat;
+}
+
+@media (max-width: 768px) {
+	.benefits__inner {
+		padding: 50px 0;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.benefits__list-box {
+		flex: 0 1 300px;
+	}
+
+	.benefits__image {
+		max-width: 90vw;
+	}
+
+	.benefits__content {
+		max-width: 300px;
+		text-align: left;
+	}
+}

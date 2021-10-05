@@ -1,0 +1,11 @@
+.socials {
+	display: flex;
+	justify-content: center;
+}
+
+.social-icon img {
+	display: inline;
+}
+.social-icon + .social-icon {
+	margin-left: 30px;
+}

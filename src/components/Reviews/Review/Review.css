@@ -1,0 +1,18 @@
+.review__item{
+	text-align: center;
+    border: 1px solid #C5AC2D;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 270px;
+    height: 300px;
+    padding: 45px 30px;
+    margin-bottom: 35px;
+}
+.review__item-title {
+    margin-bottom: 47px;
+}
+
+.review__item-text{
+    max-width: 209px;
+}
+

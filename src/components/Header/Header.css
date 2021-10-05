@@ -1,0 +1,35 @@
+.header {
+	background: #332208;
+}
+
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fefefe;
+	min-height: 100px;
+}
+
+@media (max-width: 1024px) {
+	.header__inner {
+		font-size: 16px;
+		line-height: 18px;
+		min-height: 80px;
+	}
+
+	.menu__list-item + .menu__list-item {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu__btn {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+}

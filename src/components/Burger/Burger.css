@@ -1,0 +1,45 @@
+.menu__btn {
+	display: none;
+}
+
+.menu__btn-line {
+	background-color: #fefefe;
+	width: 24px;
+	height: 2px;
+	display: block;
+	margin: 4px 0;
+    border: none;
+    outline: none;
+	transition: opacity 0.6s;
+}
+
+.menu__btn::before,
+.menu__btn::after {
+	display: block;
+	content: '';
+	height: 2px;
+	background-color: #FEFEFE;
+	transition: all 0.6s;
+}
+
+.menu__btn::before {
+	width: 24px;
+}
+
+.menu__btn::after {
+	width: 16px;
+	margin-left: auto;
+}
+
+.menu__btn.menu__btn--active .menu__btn-line {
+	opacity: 0;
+}
+
+.menu__btn.menu__btn--active::after {
+	width: 24px;
+	transform: translateY(-6px) rotate(-135deg);
+}
+
+.menu__btn.menu__btn--active::before {
+	transform: translateY(6px) rotate(135deg);
+}

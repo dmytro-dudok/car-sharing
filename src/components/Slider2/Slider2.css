@@ -1,0 +1,36 @@
+.slider{
+  max-width: 600px;
+}
+
+.control-dots{
+  top: 36%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.carousel .control-dots .dot{
+  background: #332208;
+}
+
+.dot.selected{
+  transform: scale(2);
+  background: #332208;
+}
+.carousel .control-dots {
+  position: absolute;
+  bottom: unset;
+  margin:0;
+  padding: 0;
+  text-align: center;
+  width: auto;
+  z-index: 1;
+}
+
+.carousel .control-dots .dot {
+  /* transition: opacity .25s ease-in; */
+  opacity: 1;
+  /* filter: alpha(opacity=30); */
+  box-shadow: none;
+  background: #332208;
+  display: block;
+  margin: 10px 4px;
+}
